@@ -1,4 +1,4 @@
-<!--328/dating/views/info.html-->
+<!--328/dating/views/home.html-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,26 +16,7 @@
 
 <!-- Container for main content -->
 <div class="container">
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Dating</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 2</a>
-                </li>
-            </ul>
-        </div>
-    </nav><!-- End Navigation Bar -->
+    <include href="views/includes/navBar.html" />
 
     <div class="row mt-1">
         <div class="col-12 col-md-6 mb-1">
@@ -68,8 +49,8 @@
             </div>
         </div>
 
-        <div class="image-container col-12 col-md-6">
-            <img class="rounded" id="imgDating" src="images/dating.jpg" alt="dating image">
+        <div class="image-container col-12 col-md-6 rounded">
+            <img id="imgDating" src="images/dating.jpg" alt="dating image">
         </div>
 
     </div>
