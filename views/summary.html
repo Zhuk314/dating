@@ -16,14 +16,44 @@
 
     <div class="border rounded p-3 bg-white mt-2">
         <div class="row">
-            <div class="col">
-                <div>
-                    <p>Name: {{ @fname}}</p>
+            <div class="col p-4">
+                <div class="border p-1">
+                    <p class="mt-2 mb-2">Name: {{ @SESSION.fname }} {{ @SESSION.lname }}</p>
+                </div>
+                <div class="border p-1">
+                    <p class="mt-2 mb-2">Gender: {{ @SESSION.gender}}</p>
+                </div>
+                <div class="border p-1">
+                    <p class="mt-2 mb-2">Age: {{ @SESSION.age}}</p>
+                </div>
+                <div class="border p-1">
+                    <p class="mt-2 mb-2">Phone: {{ @SESSION.phone}}</p>
+                </div>
+                <div class="border p-1">
+                    <p class="mt-2 mb-2">Email: {{ @SESSION.email}}</p>
+                </div>
+                <div class="border p-1">
+                    <p class="mt-2 mb-2">State: {{ @SESSION.state}}</p>
+                </div>
+                <div class="border p-1">
+                    <p class="mt-2 mb-2">Seeking: {{ @SESSION.seeking}}</p>
+                </div>
+                <div class="border p-1">
+                    <p class="mt-2 mb-2">Interests:
+                        <repeat group="{{ @SESSION.interests }}" value="{{ @interest }}">
+                            <span>{{ trim(@interest) }}</span>
+                        </repeat>
+                    </p>
                 </div>
             </div>
 
-            <div class="col">
-
+            <div class="col p-4">
+                <div>
+                    <h6>Bio:</h6>
+                    <p class="text-justify">
+                        {{ @SESSION.bio}}
+                    </p>
+                </div>
             </div>
 
         </div>
