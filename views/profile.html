@@ -6,15 +6,17 @@
 
     <title>Profile</title>
 </head>
-<body>
+
+
+<body class="bg-light">
 
 <!-- Container for main content -->
 <div class="container">
     <include href="views/includes/navBar.html" />
-    <div class="container">
+    <div class="border rounded p-3 bg-white mt-2">
         <h2>Profile</h2>
-
         <hr>
+
         <form method="post">
             <div class="row">
                 <!--Left field-->
@@ -106,9 +108,7 @@
 
                 </div>
 
-                <div class="text-right w-100">
-                    <input class="btn btn-primary text-white" type="submit" value="Next >">
-                </div>
+                <include href="views/includes/btnNext.html" />
             </div>
         </form>
 
